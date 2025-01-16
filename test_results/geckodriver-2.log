@@ -1,0 +1,14 @@
+1737036424340	geckodriver	INFO	Listening on 127.0.0.1:61901
+1737036427435	mozrunner::runner	INFO	Running command: "C:\\Users\\celio\\.cache\\selenium\\firefox\\win64\\134.0.1\\firefox.exe" "--marionette" "--remote-debuggin ... 2" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\celio\\AppData\\Local\\Temp\\rust_mozprofileBK9h1O"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1737036428373	Marionette	INFO	Marionette enabled
+1737036428728	Marionette	INFO	Listening on port 61912
+WebDriver BiDi listening on ws://127.0.0.1:61902
+Read port: 61912
+1737036428962	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Calling WaitFlushedEvent::Run: is delayed: 2348
+DevTools listening on ws://127.0.0.1:61902/devtools/browser/9e79af9d-6375-4327-b600-8268df2d57db
+1737036456775	Marionette	INFO	Stopped listening on port 61912
+Dynamically enable window occlusion 1
