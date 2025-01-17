@@ -5,8 +5,7 @@ Variables    ../variables/variables.py
 
 *** Keywords ***
 I navigate to the login page
-    [Arguments]    ${URL}
-    Go To    ${URL}
+    Go To    ${URL_DATA["base_url"]}
 
 I input correct credentials
     Wait Until Element Is Visible    id=user-name
@@ -23,7 +22,8 @@ I click on the login button
 
 I am able to view the home page
     ${location}    Get Location
-    Should Be Equal    ${location}    https://www.saucedemo.com/inventory.html
+    ${full_url}    Catenate    SEPARATOR=    ${URL_DATA["base_url"]}    ${URL_DATA["inventory_url"]}   
+    Should Be Equal    ${location}    ${full_url}
 
 I am able to see the expected error message for no credentials
     Wait Until Element Contains    class=error-message-container    ${ERROR_MESSAGES["no_credentials"]}
